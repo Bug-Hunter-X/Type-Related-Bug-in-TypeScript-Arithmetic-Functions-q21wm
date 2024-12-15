@@ -1,0 +1,3 @@
+# TypeScript Type Handling Bug
+
+This repository demonstrates a subtle bug related to type handling in TypeScript arithmetic functions.  The functions `add` and `subtract` are designed to operate on numbers; however, TypeScript's type system doesn't strictly enforce this constraint.  The bug is that this code will compile even if you pass strings or other types that aren't handled by the `+` or `-` operators resulting in unexpected results. This example highlights a common pitfall when dealing with type safety in TypeScript.
